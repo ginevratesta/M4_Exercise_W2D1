@@ -25,10 +25,11 @@ headers: {
 })
 .then(res => res.json())
 .then(data => {
-    const arrayOfCats = data.photos;
-    for(picsOfCats of arrayOfCats){
-        console.log(picsOfCats.src.medium)
+    const items = data.photos;
+    for(item of items){
+        const pics = item.src.medium; 
+        const detail = item.alt;
     }
-
+    console.log(pics,detail);
 })
 .catch(error => console.error(error))
