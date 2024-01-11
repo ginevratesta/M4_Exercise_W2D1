@@ -2,6 +2,10 @@ body{
     background-color: rgb(234, 222, 190);
 }
 
+header{
+    border-bottom: 2px solid orange;
+}
+
 .card-img-top{
     object-fit: cover;
     aspect-ratio: 2/1;
