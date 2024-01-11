@@ -11,11 +11,12 @@ fetch("https://api.pexels.com/v1/search?query=strawberries", {
   .then((data) => {
     const items = data.photos;
     items.map((item) => {
-    // renderizza qualcosa
     cards.innerHTML +=  displayCards(item.src.medium, item.alt)
     })
   })
-  .catch((error) => console.error(error));
+  .catch((error) => {console.error(error)
+    alert(`Error: ${error}`)
+  });
 
 
 
